@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional lanai screen cleaning service in Naples, FL. We restore pool cages, screen enclosures, and lanai panels to crystal-clear condition. Serving all of Collier County." />
+  <meta name="keywords" content="lanai screen cleaning service Naples, pool cage cleaning Naples FL, screen enclosure cleaning Naples, lanai cleaning Collier County" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Pool Cage Cleaning & Lanai Screen Cleaning Service – Naples, FL" />
+  <meta property="og:description" content="Expert pool cage and lanai screen cleaning in Naples, FL. Soft-wash safe, eco-friendly, and streak-free results every time." />
+  <meta property="og:type" content="website" />
+  <title>Pool Cage Cleaning | Lanai Screen Cleaning Service Naples, FL</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --aurora-1: #0f2027;
+      --aurora-2: #203a43;
+      --aurora-3: #2c5364;
+      --aurora-teal: #3ecfcf;
+      --aurora-violet: #7b5ea7;
+      --aurora-mint: #a8edea;
+      --aurora-gold: #f5d77e;
+      --surface: #0d1f2d;
+      --surface-alt: #122535;
+      --text-primary: #e8f4f8;
+      --text-muted: #8eb8cc;
+      --text-body: #c5dde8;
+      --accent: #3ecfcf;
+      --accent-soft: rgba(62, 207, 207, 0.12);
+      --border: rgba(62, 207, 207, 0.18);
+      --radius: 12px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--aurora-1);
+      color: var(--text-body);
+      line-height: 1.75;
+      font-size: 17px;
+      overflow-x: hidden;
+    }
+
+    /* ── AURORA BACKGROUND ── */
+    .aurora-bg {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 20% 10%, rgba(62,207,207,0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 80% 80%, rgba(123,94,167,0.22) 0%, transparent 55%),
+        radial-gradient(ellipse 70% 40% at 60% 40%, rgba(168,237,234,0.08) 0%, transparent 50%),
+        linear-gradient(160deg, #0f2027 0%, #203a43 45%, #2c5364 100%);
+      pointer-events: none;
+    }
+
+    /* ── LAYOUT ── */
+    .wrapper { position: relative; z-index: 1; }
+
+    /* ── HEADER ── */
+    header {
+      padding: 24px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+      background: rgba(13, 31, 45, 0.85);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.25rem;
+      color: var(--aurora-mint);
+      letter-spacing: 0.01em;
+      line-height: 1.2;
+    }
+
+    .logo span {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    nav a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-left: 28px;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: var(--accent); }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 100px 40px 80px;
+      max-width: 860px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--border);
+      background: var(--accent-soft);
+      padding: 5px 14px;
+      border-radius: 100px;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      line-height: 1.18;
+      color: var(--text-primary);
+      max-width: 780px;
+      margin-bottom: 24px;
+    }
+
+    .hero-lead {
+      font-size: 1.1rem;
+      color: var(--text-body);
+      max-width: 640px;
+      margin-bottom: 40px;
+      line-height: 1.8;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      padding: 8px 16px;
+      border-radius: 100px;
+    }
+
+    .badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    /* ── HERO IMAGE STRIP ── */
+    .image-strip {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr;
+      gap: 12px;
+      max-width: 1060px;
+      margin: 0 auto 80px;
+      padding: 0 40px;
+    }
+
+    .image-strip figure {
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      aspect-ratio: 4/3;
+    }
+
+    .image-strip figure:first-child { aspect-ratio: 16/9; }
+
+    .image-strip img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: brightness(0.88) saturate(1.1);
+      transition: filter 0.4s;
+    }
+
+    .image-strip figure:hover img { filter: brightness(1) saturate(1.2); }
+
+    /* ── ARTICLE BODY ── */
+    .article {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 40px 80px;
+    }
+
+    .article h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      color: var(--text-primary);
+      line-height: 1.25;
+      margin-top: 60px;
+      margin-bottom: 18px;
+    }
+
+    .article h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.25rem;
+      color: var(--aurora-mint);
+      margin-top: 36px;
+      margin-bottom: 12px;
+    }
+
+    .article p {
+      margin-bottom: 22px;
+      color: var(--text-body);
+      max-width: 68ch;
+    }
+
+    .article a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 500;
+    }
+
+    .article a:hover { color: var(--aurora-mint); }
+
+    /* ── CALLOUT BOX ── */
+    .callout {
+      background: var(--accent-soft);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 20px 24px;
+      margin: 32px 0;
+    }
+
+    .callout p { margin-bottom: 0; color: var(--text-primary); }
+
+    /* ── BENEFITS GRID ── */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin: 32px 0;
+    }
+
+    .benefit-card {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 20px 18px;
+    }
+
+    .benefit-icon {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .benefit-card h4 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1rem;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .benefit-card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+      max-width: 100%;
+    }
+
+    /* ── PROCESS STEPS ── */
+    .process-list {
+      list-style: none;
+      margin: 28px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .process-list li {
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+
+    .step-num {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.1rem;
+      color: var(--accent);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .step-body strong {
+      display: block;
+      color: var(--text-primary);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .step-body p { margin-bottom: 0; font-size: 0.92rem; }
+
+    /* ── INLINE IMAGE ── */
+    .inline-img {
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      margin: 36px 0;
+    }
+
+    .inline-img img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      max-height: 380px;
+      filter: brightness(0.88) saturate(1.1);
+    }
+
+    .inline-img figcaption {
+      padding: 10px 16px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      background: var(--surface-alt);
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── FAQ ── */
+    .faq { margin-top: 40px; }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+    }
+
+    .faq-item:first-child { border-top: 1px solid var(--border); }
+
+    .faq-q {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.05rem;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+
+    .faq-a { font-size: 0.93rem; max-width: 100%; }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      background: rgba(13, 31, 45, 0.9);
+      padding: 36px 40px;
+      text-align: center;
+    }
+
+    footer p { font-size: 0.82rem; color: var(--text-muted); }
+
+    footer a { color: var(--accent); text-decoration: none; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 700px) {
+      header { padding: 16px 20px; flex-direction: column; gap: 12px; }
+      nav a { margin-left: 14px; }
+      .hero { padding: 60px 20px 50px; }
+      .image-strip { grid-template-columns: 1fr; padding: 0 20px; }
+      .image-strip figure:first-child { aspect-ratio: 4/3; }
+      .article { padding: 0 20px 60px; }
+      footer { padding: 28px 20px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="aurora-bg"></div>
+
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      Pool Cage Cleaning
+      <span>Naples, Florida</span>
+    </div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-eyebrow">Serving Naples &amp; Collier County</div>
+    <h1>Professional Pool Cage &amp; Lanai Screen Cleaning in Naples, FL</h1>
+    <p class="hero-lead">
+      Over time, Florida's heat, humidity, and organic debris turn pool cages and lanai screens into a murky, mildew-stained barrier between you and the outdoors. We bring them back to crystal-clear condition — without high-pressure damage.
+    </p>
+    <div class="hero-badges">
+      <span class="badge"><span class="badge-dot"></span>Soft-Wash Safe</span>
+      <span class="badge"><span class="badge-dot"></span>Eco-Friendly Solutions</span>
+      <span class="badge"><span class="badge-dot"></span>Streak-Free Results</span>
+      <span class="badge"><span class="badge-dot"></span>No Damage to Screens</span>
+    </div>
+  </section>
+
+  <!-- IMAGE STRIP -->
+  <div class="image-strip">
+    <figure>
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&auto=format&fit=crop" alt="Clean pool cage enclosure in Naples FL backyard" loading="lazy" />
+    </figure>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1572931089732-5c3c8f0cc0db?w=600&auto=format&fit=crop" alt="Lanai screen cleaning service close-up" loading="lazy" />
+    </figure>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=600&auto=format&fit=crop" alt="Florida outdoor living space with clean pool enclosure" loading="lazy" />
+    </figure>
+  </div>
+
+  <!-- ARTICLE -->
+  <article class="article" itemscope itemtype="https://schema.org/Article">
+
+    <h2 id="services" itemprop="headline">The Premier Lanai Screen Cleaning Service in Naples, Florida</h2>
+
+    <p itemprop="description">
+      Naples homeowners invest heavily in outdoor living. Pool cages and lanai enclosures are not just amenities — they are central to the Southwest Florida lifestyle, keeping insects out, reducing debris in the pool, and extending the usable square footage of your home. Yet because they are constantly exposed to salt air, humidity, pollen, mold spores, algae, and bird activity, they degrade fast. A neglected pool cage does not just look bad; it shortens the life of your screens and aluminum framing and can even affect the structural integrity of the enclosure over time.
+    </p>
+
+    <p>
+      That is why a professional <a href="https://pressuregurus.com/lanai-screen-cleaning-naples-fl/" rel="dofollow">Naples lanai cleaning</a> service matters. Routine professional cleaning strips away the biological buildup that household hoses simply cannot shift, restores light transmission through the mesh, and leaves your lanai looking and feeling like new — all without the risk of high-pressure washing tearing, warping, or dislodging your screens.
+    </p>
+
+    <div class="callout">
+      <p>Florida's subtropical climate means mold, mildew, and algae grow year-round on pool cage screens. Waiting until the buildup is visible means the contamination is already deep in the mesh fibers — and harder to remove safely.</p>
+    </div>
+
+    <h2 id="why-us">Why Naples Homeowners Trust Our Pool Cage Cleaning Team</h2>
+
+    <p>
+      Not all exterior cleaning companies understand the specific demands of pool cage and lanai screen care. Standard pressure washing — the default approach for driveways and walls — is destructive on fine mesh screens. Even a modest PSI setting can stretch, puncture, or detach screen panels from their spline tracks, turning a cleaning job into an expensive repair. Our technicians are trained specifically in soft-wash methodology: a low-pressure application of biodegradable, pool-safe cleaning solutions that break down organic contaminants at the cellular level, followed by a gentle rinse that carries the residue away cleanly.
+    </p>
+
+    <p>
+      We work across the full scope of Naples-area outdoor enclosures — from compact lanai panels on condominium units to large, multi-bay pool cage structures on estate properties throughout Collier County. Whether your enclosure features standard charcoal screen mesh, no-see-um fine mesh, solar screening, or fiberglass panels, we calibrate our approach to the material, the degree of contamination, and the surrounding environment.
+    </p>
+
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <span class="benefit-icon">🛡️</span>
+        <h4>Screen-Safe Pressure</h4>
+        <p>Low-pressure soft-wash that cleans without tearing, stretching, or popping screens from their tracks.</p>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">🌿</span>
+        <h4>Pool-Safe Chemistry</h4>
+        <p>Biodegradable solutions that break down mold and algae without harming pool water, plants, or pets.</p>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">☀️</span>
+        <h4>Streak-Free Finish</h4>
+        <p>Precision rinse technique leaves mesh panels clear and bright, not watermarked or chalky.</p>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">📋</span>
+        <h4>Full Enclosure Detail</h4>
+        <p>Screens, aluminum framing, soffits, and floor areas cleaned in one visit — no partial results.</p>
+      </div>
+    </div>
+
+    <figure class="inline-img">
+      <img src="https://images.unsplash.com/photo-1575783970733-1aaedde1db74?w=900&auto=format&fit=crop" alt="Pool screen enclosure before and after professional cleaning Naples FL" loading="lazy" />
+      <figcaption>A Naples pool cage after professional soft-wash cleaning — mold, algae, and salt residue fully removed.</figcaption>
+    </figure>
+
+    <h2 id="process">Our Pool Cage Cleaning Process — Step by Step</h2>
+
+    <p>
+      Consistency is what separates a great cleaning from a mediocre one. Our service follows a structured, repeatable process on every job so nothing is missed and the results hold up over time.
+    </p>
+
+    <ol class="process-list">
+      <li>
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>Pre-Inspection &amp; Site Prep</strong>
+          <p>We walk the full perimeter of the enclosure to assess contamination levels, identify any pre-existing screen damage, and note proximity to pool water, plants, or outdoor furniture that needs protection during the clean.</p>
+        </div>
+      </li>
+      <li>
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>Dry Debris Removal</strong>
+          <p>Leaves, spider webs, insect nests, and loose organic matter are removed by hand and with soft brushes before any liquid is applied. This prevents wet debris from smearing across screens during washing.</p>
+        </div>
+      </li>
+      <li>
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>Soft-Wash Solution Application</strong>
+          <p>Our biodegradable cleaning solution is applied to all screen panels and aluminum framing at low pressure. The formula is left to dwell for several minutes, breaking down mold, mildew, algae, and oxidation chemically rather than mechanically.</p>
+        </div>
+      </li>
+      <li>
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <strong>Precision Rinse</strong>
+          <p>Panels are rinsed top-to-bottom with controlled low-pressure water, flushing all dissolved contamination away from screens, framing, and the pool deck below.</p>
+        </div>
+      </li>
+      <li>
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <strong>Frame &amp; Track Detail</strong>
+          <p>Aluminum extrusions, corner joints, door frames, and spline tracks are wiped and spot-cleaned by hand to remove residue that rinse water alone does not fully clear.</p>
+        </div>
+      </li>
+      <li>
+        <div class="step-num">6</div>
+        <div class="step-body">
+          <strong>Final Walk-Through</strong>
+          <p>We inspect the completed work panel by panel before we leave, confirming every section is clean, streak-free, and structurally undisturbed.</p>
+        </div>
+      </li>
+    </ol>
+
+    <h2>What We Clean — Full Pool Cage &amp; Lanai Scope</h2>
+
+    <p>
+      Pool cage cleaning is more involved than it may appear from the outside. A complete enclosure includes dozens of individual components, each of which accumulates contaminants differently and requires attention:
+    </p>
+
+    <h3>Screen Panels</h3>
+    <p>
+      The mesh panels are the primary focus of any lanai cleaning job. Over time, they collect algae (which appears as a greenish-grey film), mold and mildew (appearing as black or dark brown spotting), salt deposits, calcium residue from pool splash, pollen, and fine dust. All of these reduce light transmission and make the enclosure feel dark and uninviting. Our soft-wash process removes the full organic layer and restores screen clarity without stretching or tearing the mesh.
+    </p>
+
+    <h3>Aluminum Framing &amp; Extrusions</h3>
+    <p>
+      The structural aluminum members — top plates, horizontal rails, vertical posts, and corner connectors — oxidize in Naples' salt-air environment, developing a white chalky film called aluminum oxide. Left untreated, this accelerates corrosion and discolors the surrounding screens. We treat oxidized framing with targeted cleaners that break down the chalky layer and restore the profile's original finish.
+    </p>
+
+    <h3>Doors, Hinges &amp; Hardware</h3>
+    <p>
+      Screen doors and their hardware are high-traffic areas that attract dirt, insect debris, and rust from the hinge screws. We clean door panels individually and address the frame, sweeps, and hinge areas to ensure the full entry point is as clean as the surrounding enclosure.
+    </p>
+
+    <h3>Interior Soffit &amp; Roof Panels</h3>
+    <p>
+      The overhead screen panels of a pool cage are often the most neglected — and the most visually impactful when dirty. Interior soffits collect mold, pollen, and spider webs that rain down into the pool and onto outdoor furniture. We clean overhead panels with care for the water and surfaces below.
+    </p>
+
+    <figure class="inline-img">
+      <img src="https://images.unsplash.com/photo-1596395820740-a9885c5a0f7c?w=900&auto=format&fit=crop" alt="Aluminum framing pool cage Naples Florida before cleaning" loading="lazy" />
+      <figcaption>Oxidized aluminum framing and screen panels before professional cleaning — a common sight in Naples' salt-air environment.</figcaption>
+    </figure>
+
+    <h2>How Often Should You Clean Your Pool Cage in Naples?</h2>
+
+    <p>
+      The frequency of professional pool cage cleaning depends on your property's microenvironment. Homes near tidal water, backing up to preserve areas, or located under large trees will accumulate biological debris faster than properties in more open settings. As a general guideline for the Naples area:
+    </p>
+
+    <ul style="margin: 16px 0 24px 20px; display: flex; flex-direction: column; gap: 10px;">
+      <li><strong style="color: var(--text-primary);">Every 6 months</strong> — Properties near water, heavy tree canopy, or with known mold issues.</li>
+      <li><strong style="color: var(--text-primary);">Annually</strong> — Typical Naples residential properties in open or semi-open settings.</li>
+      <li><strong style="color: var(--text-primary);">After major storms</strong> — Post-hurricane or heavy storm cleaning to remove debris, organic matter, and salt spray deposited during the event.</li>
+    </ul>
+
+    <p>
+      Regular professional cleaning does more than maintain appearance. It is preventive maintenance. Screen mesh that stays clean lasts significantly longer than mesh that sits saturated with organic acids from algae and mold — meaning routine cleaning extends the life of your screens and delays costly re-screening projects.
+    </p>
+
+    <h2>Serving All of Naples &amp; Collier County</h2>
+
+    <p>
+      Our pool cage and lanai screen cleaning service covers the full Naples metro area and surrounding Collier County communities, including North Naples, East Naples, Pelican Bay, Tiburon, Lely Resort, Marco Island, Bonita Bay, and all master-planned communities throughout the region. We are familiar with the HOA appearance standards common to Naples' gated communities and can work around pool maintenance schedules to minimize disruption.
+    </p>
+
+    <p>
+      Whether you manage a single-family home, a villa, a condominium lanai, or a large estate property, our team has the equipment and experience to handle the job correctly. We are fully insured, and we take responsibility for the work from first contact through final inspection.
+    </p>
+
+    <!-- FAQ -->
+    <h2 id="faq">Frequently Asked Questions</h2>
+
+    <div class="faq">
+
+      <div class="faq-item">
+        <p class="faq-q">Will soft washing damage my pool water or surrounding plants?</p>
+        <p class="faq-a">No. Our cleaning solutions are biodegradable and pH-balanced. We cover pool returns and sensitive plants before application as a precaution, and the dilution achieved during rinsing presents no risk to pool chemistry or landscape vegetation.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">How long does a typical pool cage cleaning take?</p>
+        <p class="faq-a">Most residential pool cages in Naples take between 1.5 and 3 hours, depending on size, contamination level, and the number of panels. Larger estate cages or enclosures with heavy mold or oxidation may take longer.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Do I need to be home during the cleaning?</p>
+        <p class="faq-a">Not necessarily. As long as we have access to an outdoor water source and the gate to the pool area is unlocked or you can arrange access, the job can be completed without you on-site. We will contact you before and after for peace of mind.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Can you clean my lanai screens without cleaning the whole pool cage?</p>
+        <p class="faq-a">Yes. If your primary concern is the lanai panel area rather than the full cage, we can focus our service there. We will assess whether isolated cleaning makes sense given the overall state of the enclosure and advise accordingly.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">What if some of my screens are already torn or damaged before you arrive?</p>
+        <p class="faq-a">We document any pre-existing damage during our initial walk-through and flag it for you. We can clean around damaged sections and, depending on the extent, recommend whether repair or re-screening should happen before or after cleaning.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Is this service available year-round in Naples?</p>
+        <p class="faq-a">Yes. We operate throughout the year. Many customers schedule a clean before season (October–November) to arrive at a fresh enclosure, and another after season or following summer storm activity.</p>
+      </div>
+
+    </div>
+
+  </article>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Pool Cage Cleaning Naples FL &nbsp;|&nbsp; Serving Naples, Marco Island &amp; Collier County &nbsp;|&nbsp; All Rights Reserved</p>
+  </footer>
+
+</div>
+</body>
+</html>
